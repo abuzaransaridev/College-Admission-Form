@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>COLLEGE ADMISSION FORM</title>
+
+		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="50">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+
+			body {
+				font-family: Arial, sans-serif;
+			}
+
+			header {
+				text-align: center;
+			}
+
+			img {
+				height: 150px;
+				width: 170px;
+			}
+
+			form {
+				background-color: #EEEEEE;
+				padding: 10px;
+			}
+
+			h2 {
+				text-align: center;
+			}
+
+			div {
+				display:inline-block;
+				margin-bottom: 15px;
+				margin-right:15px;
+				
+			}
+
+			.name {
+				height: 30px;
+				width: 350px;
+				margin-top: 5px;
+			}
+			
+			.button{
+				height:30px;
+				width:120px;
+				margin:10px;				
+			}
+			
+			.confirmation{
+				padding:20px;
+			}
+			
+			
+
+		</style>
+	</head>
+
+	<body>
+
+		<header>
+			<img src="college_logo1.png" alt="College Logo">
+
+			<h1>
+				Rajiv Gandhi College of Computer Science
+			</h1>
+		</header>
+
+			<h2 style="background-color:#2C5EAD; color:white; padding:5px;">
+				ADMISSION FORM
+			</h2>
+
+		<form>
+
+			<fieldset style="vertical-align:center;padding-left:50px;padding-right:50px;padding-top:20px">
+
+				<legend style="background-color:#2C5EAD; color:white; padding:5px;">
+					Personal Information
+				</legend>
+
+				<div style="display:inline-block">
+					<label for="First_name">
+						1. Full Name of Applicant
+					</label><br>
+
+					<input type="text"
+						   id="First_name"
+						   name="First_name"
+						   placeholder="Full Name"
+						   required
+						   class="name">
+				</div>
+
+				<div style="display:inline-block">
+					<label for="Father_name">
+						2. Father's Name
+					</label><br>
+
+					<input type="text"
+						   id="Father_name"
+						   name="Father_name"
+						   placeholder="Father Name"
+						   required
+						   class="name">
+				</div>
+
+				<div>
+					<label for="Last_name">
+						3. Mother's Name
+					</label><br>
+
+					<input type="text"
+						   id="Last_name"
+						   name="Last_name"
+						   placeholder="Mother's Name"
+						   required
+						   class="name">
+				</div>	
+
+				<div>
+					<label for="date_of_birth">
+						4. Date of Birth
+					</label><br>
+
+					<input type="date"
+						   id="date_of_birth"
+						   name="date_of_birth"
+						   required
+						   class="name">
+				</div>
+
+				<div>
+					<label for="nationality">
+						5. Nationality 
+					</label><br>
+
+					<input type="tel"
+						   id="nationality"
+						   name="nationality"
+						   placeholder="India"
+						   required			
+						   class="name">
+				</div>
+				
+				<div>
+					<label>
+						6. Gender 
+					</label><br>
+					
+					<input type="radio" id="Male" name="gender" value="Male">
+					<label for="Male">
+						Male
+					</labe1>
+					<input type="radio" id="Female" name="gender" value="Female">
+					<label for="Female">
+						Female
+					</labe1>
+					<input type="radio" id="other" name="gender" value="Ohter">
+					<label for="other">
+						Other
+					</1abe1>
+				</div>
+
+			</fieldset>
+
+		</form>
+		<br>	
+		<form>
+
+			<fieldset style="vertical-align:center;padding-left:50px;padding-right:50px;padding-top:20px">
+
+				<legend style="background-color:#2C5EAD; color:white; padding:5px;">
+					Contact Information
+				</legend>
+
+				<div style="display:inline-block">
+					<label for="Number">
+						7. Mobile Number 
+					</label><br>
+
+					<input type="text"
+						   id="Number"
+						   name="Number"
+						   placeholder="Number"
+						   required
+						   class="name">
+				</div>
+
+				<div style="display:inline-block">
+					<label for="Email">
+						8. Email Address
+					</label><br>
+
+					<input type="text"
+						   id="Email"
+						   name="Email"
+						   placeholder="Email"
+						   required
+						   class="name">
+				</div>
+
+				<div>
+					<label for="Address">
+						9. Address 
+					</label><br>
+
+					<input type="text"
+						   id="Address"
+						   name="Address"
+						   placeholder="Address"
+						   required
+						   class="name">
+				</div>	
+
+				<div>
+					<label for="City">
+						10. City
+					</label><br>
+
+					<input type="text"
+						   id="City"
+						   name="City"
+						   placeholder="City"
+						   required
+						   class="name">
+				</div>
+
+				<div>
+					<label for="State">
+						11. State  
+					</label><br>
+
+					<input type="text"
+						   id="State"
+						   name="State"
+						   placeholder="State"
+						   required			
+						   class="name">
+				</div>
+				
+				<div>
+					<label for="pincode">
+						12. Pincode 
+					</label><br>
+					<input type="number"
+							id="pincode"
+							name="pincode"
+							placeholder="Pincode"
+							class="name"
+							required>
+				</div>
+
+			</fieldset>
+
+		</form>
+		<br>
+		<form>
+
+			<fieldset style="vertical-align:center;padding-left:50px;padding-right:50px;padding-top:20px">
+
+				<legend style="background-color:#2C5EAD; color:white; padding:5px;">
+					Academic Information
+				</legend>
+
+				<div style="display:inline-block">
+					<label for="Qualification">
+						13. Qualification 
+					</label><br>
+
+					<input type="text"
+						   id="Qualification"
+						   name="Qualification"
+						   placeholder="-Select Qualification-"
+						   required
+						   class="name">
+				</div>
+
+				<div style="display:inline-block">
+					<label for="Course">
+						14. Course Applying For
+					</label><br>
+
+					<input type="text"
+						   id="Course"
+						   name="Course"
+						   placeholder="-Select Course-"
+						   required
+						   class="name">
+				</div>
+
+				<div>
+					<label for="Previous">
+						15. Previous School/College Name
+					</label><br>
+
+					<input type="text"
+						   id="Previous"
+						   name="Previous"
+						   placeholder="School/College Name"
+						   required
+						   class="name">
+				</div>		
+				
+				<div>
+					<label for="Board">
+						16. Board/University
+					</label><br>
+
+					<input type="text"
+						   id="Board"
+						   name="Board"
+						   placeholder="Board/University"
+						   required			
+						   class="name">
+				</div>			
+
+				<div>
+					<label for="Percentage">
+						17. Percentage / CGPA
+					</label><br>
+
+					<input type="text"
+						   id="Percentage"
+						   name="Percentage"
+						   placeholder="Percentage / CGPA"
+						   required
+						   class="name">
+				</div>
+
+				<div>
+					<label for="Year">
+						17. Passing Year
+					</label><br>
+					<input type="text" 
+							id="Year" 
+							name="Year"
+							class="name"
+							placeholder="Passing Year"
+							required>
+				</div>
+				
+			</fieldset>
+		</form>
+		
+		<br>
+		
+		<form>
+			<fieldset class="confirmation">
+			
+				<input type="checkbox"  id="confirmation" required>
+				<label for="confirmation">
+					I hereby declare that all the information provided by me is true and correct.
+				</label><br>
+					<input class="button" type="reset">
+					<input class="button" type="submit">
+					
+			</fieldset>
+		</form>
+		
+	</body>
+
+</html>
