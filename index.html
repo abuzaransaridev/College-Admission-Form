@@ -5,14 +5,15 @@
 		<title>COLLEGE ADMISSION FORM</title>
 
 		<meta charset="UTF-8">
-		<meta http-equiv="refresh" content="50">
+		<meta name="author" content="Abuzar Ansari">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 
 		<style>
 
 			body {
 				font-family: Arial, sans-serif;
-			}
+			}	
 
 			header {
 				text-align: center;
@@ -54,6 +55,23 @@
 			.confirmation{
 				padding:20px;
 			}
+			#Year{
+				height: 40px;
+				width: 360px;
+			}	
+			
+			#Course{
+				height: 40px;
+				width: 360px;
+								
+			}			
+			#Qualification{
+				height: 40px;
+				width: 360px;
+							
+			}
+
+			
 			
 			
 
@@ -74,7 +92,7 @@
 				ADMISSION FORM
 			</h2>
 
-		<form>
+		<form method="POST" action="">
 
 			<fieldset style="vertical-align:center;padding-left:50px;padding-right:50px;padding-top:20px">
 
@@ -138,7 +156,7 @@
 						5. Nationality 
 					</label><br>
 
-					<input type="tel"
+					<input type="text"
 						   id="nationality"
 						   name="nationality"
 						   placeholder="India"
@@ -154,15 +172,15 @@
 					<input type="radio" id="Male" name="gender" value="Male">
 					<label for="Male">
 						Male
-					</labe1>
+					</label>
 					<input type="radio" id="Female" name="gender" value="Female">
 					<label for="Female">
 						Female
-					</labe1>
+					</label>
 					<input type="radio" id="other" name="gender" value="Ohter">
 					<label for="other">
 						Other
-					</1abe1>
+					</label>
 				</div>
 
 			</fieldset>
@@ -182,7 +200,7 @@
 						7. Mobile Number 
 					</label><br>
 
-					<input type="text"
+					<input type="tel"
 						   id="Number"
 						   name="Number"
 						   placeholder="Number"
@@ -195,7 +213,7 @@
 						8. Email Address
 					</label><br>
 
-					<input type="text"
+					<input type="email"
 						   id="Email"
 						   name="Email"
 						   placeholder="Email"
@@ -270,26 +288,26 @@
 					<label for="Qualification">
 						13. Qualification 
 					</label><br>
-
-					<input type="text"
-						   id="Qualification"
-						   name="Qualification"
-						   placeholder="-Select Qualification-"
-						   required
-						   class="name">
+					<select id="Qualification" name="Qualification" class="name" required>
+						<option value="">--Select Qualification--</option>
+						<option>12th Science</option>
+						<option>12th Commerce</option>
+						<option>12th Arts</option>
+						<option>Diploma</option>
+					</select>
 				</div>
 
 				<div style="display:inline-block">
 					<label for="Course">
 						14. Course Applying For
 					</label><br>
-
-					<input type="text"
-						   id="Course"
-						   name="Course"
-						   placeholder="-Select Course-"
-						   required
-						   class="name">
+					<select id="Course" name="Course" class="name" required>
+						<option value="">--Select Course--</option>
+						<option>BCS</option>
+						<option>BCA</option>
+						<option>BSc Computer Science</option>
+						<option>BSc Information Technology</option>
+					</select>
 				</div>
 
 				<div>
@@ -307,7 +325,7 @@
 				
 				<div>
 					<label for="Board">
-						16. Board/University
+						16. Board / University
 					</label><br>
 
 					<input type="text"
@@ -333,14 +351,19 @@
 
 				<div>
 					<label for="Year">
-						17. Passing Year
+						18. Passing Year
 					</label><br>
-					<input type="text" 
-							id="Year" 
-							name="Year"
-							class="name"
-							placeholder="Passing Year"
-							required>
+					<Select id="Year" class="name" name="Year" required>
+						<option value="">--Passing Year--</option>
+						<option>2026</option>
+						<option>2025</option>
+						<option>2024</option>
+						<option>2023</option>
+						<option>2022</option>
+						<option>2021</option>
+						<option>2020</option>						
+					</Select>
+					
 				</div>
 				
 			</fieldset>
